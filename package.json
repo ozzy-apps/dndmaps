@@ -1,0 +1,13 @@
+{
+  "name": "fable-map-studio",
+  "version": "0.3.1",
+  "private": true,
+  "type": "module",
+  "description": "An offline DnD map painter for Linux",
+  "scripts": {
+    "dev": "python3 -m http.server 5173 --directory app --bind 127.0.0.1",
+    "start": "/usr/bin/python3 packaging/fable.py",
+    "test": "node tests/model.test.js",
+    "package:deb": "python3 scripts/build-deb.py"
+  }
+}

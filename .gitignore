@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+artifacts/*
+!artifacts/*.fable
+!artifacts/fable-map-studio_0.3.1_all.deb
