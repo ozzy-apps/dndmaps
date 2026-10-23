@@ -2,7 +2,7 @@
 
 ## Current release — 0.3.1
 - Fog rendering fixed: continuous world-space clouds, painted atmosphere responds to ambient/source lighting, Global haze scales painted fog/mist/smoke, and automatic fog banks are removed. Source passed **99 native interaction/pixel/alpha checks**, **26 model tests**, and **2 storage tests**.
-- Package: `artifacts/fable-map-studio_0.3.1_all.deb`. Source QA screenshot/report: `artifacts/fog-fix.png` and `.checks.json` (generated QA artifacts stay local). Extracted package passed the same **99/99** native checks. GitHub push is the remaining release step.
+- Package: `artifacts/fable-map-studio_0.3.1_all.deb`. Source QA screenshot/report: `artifacts/fog-fix.png` and `.checks.json` (generated QA artifacts stay local). Extracted package passed the same **99/99** native checks. Published to `main` at https://github.com/ozzy-apps/dndmaps (app commit `f916f2d`). No required work remains.
 - Features: variable map size/aspect, alpha tips/import, partial textured erasing, Shift-drag sizing, point/spot lights and grading, painted atmosphere, named independent map states, Material 3 neutral grey/blue light/dark UI.
 - Version 1/2 files migrate to schema 3. Existing map strokes and saved haze values are retained. New maps contain no painted fog. New files need Fable 0.3+.
 - `npm start` opens the desktop; `npm run dev` serves browser preview. Install with `sudo apt install ./artifacts/fable-map-studio_0.3.1_all.deb`. No system-wide installation performed.
@@ -235,3 +235,9 @@ No external services, accounts, image generation, or remote hosting are required
 - Inspected the packaged light-theme large-area fog capture (`artifacts/fog-fix-package.png`). Cloud textures are continuous and ambient/source lighting applies.
 - Prepared initial main-branch source, licenses, docs, tests, three portable examples and latest .deb in the separate Git checkout. Older packages and generated QA images/reports remain local.
 - Next: commit/push to the explicitly authorized GitHub repository and verify the remote commit matches.
+
+## Fog fix 0.3.1 — Step 5: published
+- Initial app/release commit `f916f2dda608aa2eb0050f790248d885cbda5c7b` successfully pushed to `origin/main` at https://github.com/ozzy-apps/dndmaps. It includes source, fonts/licenses, tests, docs, three .fable examples and the verified 0.3.1 .deb.
+- Source and extracted package each pass 99 native checks. Model 26/26, storage 2/2 and Python compilation pass. Dark/light fog screenshots inspected; no automatic fog remains.
+- The workspace is synchronized with `/tmp/fable-dndmaps-publish`; use that checkout for Git while the workspace .git remains a read-only placeholder. Future clones have normal Git metadata.
+- No required work remains for this request. Future feature scope is in Current boundaries and next steps above.
